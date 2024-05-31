@@ -60,6 +60,9 @@ Task 5: Compile a report summarizing the optimizations you implemented. The repo
 
 <img width="842" alt="image" src="https://github.com/KarlaPR10/Lab10/assets/138635602/16f2ddf7-7099-40ac-bb3a-b8c3c88b884a">
 
+<img width="550" alt="image" src="https://github.com/KarlaPR10/Lab10/assets/138635602/ad45dd0d-2039-4c9e-b48d-5b820298fe30">
+
+
 
 
 
