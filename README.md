@@ -55,12 +55,26 @@ Task 5: Compile a report summarizing the optimizations you implemented. The repo
 
     Use a more efficient database query: Instead of making 100 separate database queries to retrieve products by ID, we can use a single query to retrieve all products at once. This can be achieved by using a SELECT statement with a WHERE clause that filters products by ID.
     Use a more efficient data structure: The current implementation uses an ArrayList to store products, which can be slow for large datasets. We can consider using a more efficient data structure such as a HashSet or a HashMap to store products.
+ <img width="842" alt="image" src="https://github.com/KarlaPR10/Lab10/assets/138635602/16f2ddf7-7099-40ac-bb3a-b8c3c88b884a">
+          
     Avoid unnecessary database calls: The current implementation retrieves all products from the database, even if the user only needs a subset of products. We can consider adding a parameter to the LoadProducts method that allows the user to specify the range of IDs they need.
     Here’s an updated implementation that incorporates these suggestions
 
-<img width="842" alt="image" src="https://github.com/KarlaPR10/Lab10/assets/138635602/16f2ddf7-7099-40ac-bb3a-b8c3c88b884a">
+
 
 <img width="550" alt="image" src="https://github.com/KarlaPR10/Lab10/assets/138635602/ad45dd0d-2039-4c9e-b48d-5b820298fe30">
+
+    The provided code can be optimized by using a single loop and avoiding the creation of a new list for each iteration. Here’s the optimized code:
+
+  <img width="403" alt="image" src="https://github.com/KarlaPR10/Lab10/assets/138635602/c0ea1808-ad87-4ef8-8287-6ef22216364d">
+
+
+    
+    Explanation
+    
+    The original code uses a foreach loop to iterate over the input list data and adds each element to the result list result after performing some operation. The operation is either multiplying the element by 2 if it’s even or by 3 if it’s odd.
+    
+    The optimized code achieves the same result using a single loop and a conditional expression in the add method. The conditional expression d % 2 == 0 ? d * 2 : d * 3 checks whether the element is even or odd and performs the corresponding multiplication. This eliminates the need to create a new list for each iteration and reduces the number of operations.
 
 
 
